@@ -1,0 +1,33 @@
+.container-aux {
+  display: block;
+  position: relative;
+  overflow-x: auto;
+}
+.Link {
+  text-decoration: none;
+  color: red !important;
+}
+
+.qr {
+  display: block;
+  position: relative;
+  margin: 10px auto;
+  width: 200px;
+  border-radius: 10px
+}
+
+/* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #121212;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 30px;
+    border: 2px solid #121212;
+  }
