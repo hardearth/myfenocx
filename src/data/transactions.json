@@ -1,0 +1,200 @@
+{
+  "commissions" : [
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "commission",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 785,
+      "date": "2024-03-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    },
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "commission",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 785,
+      "date": "2023-02-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    },
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "commission",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 785,
+      "date": "2022-02-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    },
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "commission",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 785,
+      "date": "2023-01-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    },
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "commission",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 785,
+      "date": "2023-05-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    },
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "commission",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 785,
+      "date": "2020-02-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    }
+  ],
+  "withdrawals" : [
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "withdrawal",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 785,
+      "date": "2023-03-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    },
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "withdrawal",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 785,
+      "date": "2023-02-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    },
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "withdrawal",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 785,
+      "date": "2022-01-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    },
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "withdrawal",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 785,
+      "date": "2023-05-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    }
+  ],
+  "deposits" : [
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "deposit",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 785,
+      "date": "2023-03-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    },
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "deposit",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 785,
+      "date": "2023-02-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    },
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "deposit",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 10,
+      "date": "2023-02-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    },
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "deposit",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 100,
+      "date": "2023-02-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    },
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "deposit",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 785,
+      "date": "2023-01-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    },
+    {
+      "id": "63ed4bb02f8e34ae093c166a",
+      "type": "deposit",
+      "from": "Juan Perez",
+      "to": "Javier Perez",
+      "methodPayment": "BUSD BET-20",
+      "detail": "Ela ohi huf guwibe atso.",
+      "amount": 785,
+      "date": "2023-12-14T03:31:40.953+00:00",
+      "hash": "",
+      "status": "Approved"
+    }
+  ]
+}

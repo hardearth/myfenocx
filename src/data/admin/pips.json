@@ -1,0 +1,24 @@
+{
+  "pips": [
+    {
+      "_id": "pip1",
+      "name": "Binary",
+      "value": 100
+    },
+    {
+      "_id": "pip2",
+      "name": "Cryptos",
+      "value": 200
+    },
+    {
+      "_id": "pip3",
+      "name": "Forex",
+      "value": 150
+    },
+    {
+      "_id": "pip4",
+      "name": "Synthetic",
+      "value": 250
+    }
+  ]
+}

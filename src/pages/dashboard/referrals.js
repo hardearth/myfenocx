@@ -1,14 +1,11 @@
 import { FormattedMessage } from 'react-intl';
-// material-ui
 import { Grid, Typography } from '@mui/material';
-
-// project imports
 import ReferralLink from 'sections/dashboard/ReferralLink';
 import Tree from 'sections/dashboard/Tree';
 
 const Page = () => {
   return (
-    <Grid container spacing={3}>
+    <Grid container className="container">
       <Grid item xs={12}>
         <Typography variant="h1" gutterBottom>
           <FormattedMessage id="referrals" />
@@ -20,9 +17,7 @@ const Page = () => {
       <Grid item xs={12}>
         <ReferralLink />
       </Grid>
-      <Grid item xs={12}>
-        <Tree />
-      </Grid>
+      <Tree />
     </Grid>
   );
 };

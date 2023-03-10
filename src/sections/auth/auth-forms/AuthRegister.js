@@ -5,7 +5,6 @@ import { Link as RouterLink } from 'react-router-dom';
 import {
   Box,
   Button,
-  Divider,
   FormControl,
   FormHelperText,
   Grid,
@@ -23,24 +22,12 @@ import {
 // third party
 import * as Yup from 'yup';
 import { Formik } from 'formik';
-
-// project import
-import useAuth from 'hooks/useAuth';
-import useScriptRef from 'hooks/useScriptRef';
 import IconButton from 'components/@extended/IconButton';
 import AnimateButton from 'components/@extended/AnimateButton';
-import FirebaseSocial from './FirebaseSocial';
 import { strengthColor, strengthIndicator } from 'utils/password-strength';
-
-// assets
 import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
 
-// ============================|| FIREBASE - REGISTER ||============================ //
-
 const AuthRegister = () => {
-  const { firebaseRegister } = useAuth();
-  const scriptedRef = useScriptRef();
-
   const [level, setLevel] = useState();
   const [showPassword, setShowPassword] = useState(false);
   const handleClickShowPassword = () => {
@@ -77,34 +64,12 @@ const AuthRegister = () => {
           firstname: Yup.string().max(255).required('First Name is required'),
           lastname: Yup.string().max(255).required('Last Name is required'),
           email: Yup.string().email('Must be a valid email').max(255).required('Email is required'),
-          contact: Yup.number()
-            .test('len', 'Contact should be exactly 10 digit', (val) => val?.toString().length === 10)
-            .required('Phone number is required'),
+          contact: Yup.number().required('Phone number is required'),
           password: Yup.string().max(255).required('Password is required')
         })}
-        onSubmit={async (values, { setErrors, setStatus, setSubmitting }) => {
-          try {
-            await firebaseRegister(values.email, values.password).then(
-              () => {
-                // WARNING: do not set any formik state here as formik might be already destroyed here. You may get following error by doing so.
-                // Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application.
-                // To fix, cancel all subscriptions and asynchronous tasks in a useEffect cleanup function.
-                // github issue: https://github.com/formium/formik/issues/2430
-              },
-              (err) => {
-                setStatus({ success: false });
-                setErrors({ submit: err.message });
-                setSubmitting(false);
-              }
-            );
-          } catch (err) {
-            console.error(err);
-            if (scriptedRef.current) {
-              setStatus({ success: false });
-              setErrors({ submit: err.message });
-              setSubmitting(false);
-            }
-          }
+        onSubmit={(values, actions) => {
+          console.log(values, actions);
+          alert('Register function here');
         }}
       >
         {({ errors, handleBlur, handleChange, handleSubmit, isSubmitting, touched, values }) => (
@@ -181,12 +146,22 @@ const AuthRegister = () => {
                   <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2}>
                     <Select value={values.countryCode} name="countryCode" onBlur={handleBlur} onChange={handleChange}>
                       <MenuItem value="+57">+57</MenuItem>
-                      <MenuItem value="+91">+91</MenuItem>
-                      <MenuItem value="+36">+36</MenuItem>
-                      <MenuItem value="+39">+39</MenuItem>
-                      <MenuItem value="1-876">1-876</MenuItem>
-                      <MenuItem value="+7">+7</MenuItem>
-                      <MenuItem value="+95">+95</MenuItem>
+                      <MenuItem value="+1">+1</MenuItem>
+                      <MenuItem value="+34">+34</MenuItem>
+                      <MenuItem value="+507">+507</MenuItem>
+                      <MenuItem value="+51">+51</MenuItem>
+                      <MenuItem value="+51">+52</MenuItem>
+                      <MenuItem value="+53">+53</MenuItem>
+                      <MenuItem value="+54">+54</MenuItem>
+                      <MenuItem value="+55">+55</MenuItem>
+                      <MenuItem value="+56">+56</MenuItem>
+                      <MenuItem value="+58">+58</MenuItem>
+                      <MenuItem value="+591">+591</MenuItem>
+                      <MenuItem value="+592">+592</MenuItem>
+                      <MenuItem value="+593">+593</MenuItem>
+                      <MenuItem value="+595">+595</MenuItem>
+                      <MenuItem value="+598">+598</MenuItem>
+                      <MenuItem value="+61">+61</MenuItem>
                     </Select>
                     <TextField
                       fullWidth
@@ -274,14 +249,6 @@ const AuthRegister = () => {
                     Create Account
                   </Button>
                 </AnimateButton>
-              </Grid>
-              <Grid item xs={12}>
-                <Divider>
-                  <Typography variant="caption">Sign up with</Typography>
-                </Divider>
-              </Grid>
-              <Grid item xs={12}>
-                <FirebaseSocial />
               </Grid>
             </Grid>
           </form>

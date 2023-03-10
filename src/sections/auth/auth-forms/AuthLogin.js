@@ -1,45 +1,17 @@
 import React from 'react';
-import { Link as RouterLink } from 'react-router-dom';
-
-// material-ui
-import {
-  Button,
-  Checkbox,
-  Divider,
-  FormControlLabel,
-  FormHelperText,
-  Grid,
-  Link,
-  InputAdornment,
-  InputLabel,
-  OutlinedInput,
-  Stack,
-  Typography
-} from '@mui/material';
-
-// third party
+import { Link as RouterLink, useNavigate } from 'react-router-dom';
+import { Button, FormHelperText, Grid, Link, InputAdornment, InputLabel, OutlinedInput, Stack, Typography } from '@mui/material';
 import * as Yup from 'yup';
 import { Formik } from 'formik';
-
-// project import
-import useAuth from 'hooks/useAuth';
-import useScriptRef from 'hooks/useScriptRef';
-import FirebaseSocial from './FirebaseSocial';
 import IconButton from 'components/@extended/IconButton';
 import AnimateButton from 'components/@extended/AnimateButton';
-
-// assets
 import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
-
-// ============================|| FIREBASE - LOGIN ||============================ //
+import toast from 'react-hot-toast';
+import Pay from 'sections/Pay';
 
 const AuthLogin = () => {
-  const [checked, setChecked] = React.useState(false);
+  const navigate = useNavigate();
   const [capsWarning, setCapsWarning] = React.useState(false);
-
-  const { isLoggedIn, firebaseEmailPasswordSignIn } = useAuth();
-  const scriptedRef = useScriptRef();
-
   const [showPassword, setShowPassword] = React.useState(false);
   const handleClickShowPassword = () => {
     setShowPassword(!showPassword);
@@ -57,44 +29,35 @@ const AuthLogin = () => {
     }
   };
 
+  function onPay() {
+    toast('Verifying transaction', {
+      duration: 3000,
+      position: 'top-right'
+    });
+    setTimeout(() => {
+      navigate('/dashboard/default');
+    }, 3000);
+  }
+
   return (
     <>
+      <Pay value={100} info="Account activation" onPay={onPay} />
       <Formik
         initialValues={{
-          email: 'myfenocx@mail.com',
-          password: '123456',
+          email: '',
+          password: '',
           submit: null
         }}
         validationSchema={Yup.object().shape({
           email: Yup.string().email('Must be a valid email').max(255).required('Email is required'),
           password: Yup.string().max(255).required('Password is required')
         })}
-        onSubmit={async (values, { setErrors, setStatus, setSubmitting }) => {
-          try {
-            await firebaseEmailPasswordSignIn(values.email, values.password).then(
-              () => {
-                // WARNING: do not set any formik state here as formik might be already destroyed here. You may get following error by doing so.
-                // Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application.
-                // To fix, cancel all subscriptions and asynchronous tasks in a useEffect cleanup function.
-                // github issue: https://github.com/formium/formik/issues/2430
-              },
-              (err) => {
-                setStatus({ success: false });
-                setErrors({ submit: err.message });
-                setSubmitting(false);
-              }
-            );
-          } catch (err) {
-            console.error(err);
-            if (scriptedRef.current) {
-              setStatus({ success: false });
-              setErrors({ submit: err.message });
-              setSubmitting(false);
-            }
-          }
+        onSubmit={(values, actions) => {
+          console.log(values, actions);
+          document.getElementById('btnPay').click(); // open/close pay
         }}
       >
-        {({ errors, handleBlur, handleChange, handleSubmit, isSubmitting, touched, values }) => (
+        {({ errors, handleBlur, handleChange, handleSubmit, touched, values }) => (
           <form noValidate onSubmit={handleSubmit}>
             <Grid container spacing={3}>
               <Grid item xs={12}>
@@ -165,24 +128,7 @@ const AuthLogin = () => {
 
               <Grid item xs={12} sx={{ mt: -1 }}>
                 <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2}>
-                  <FormControlLabel
-                    control={
-                      <Checkbox
-                        checked={checked}
-                        onChange={(event) => setChecked(event.target.checked)}
-                        name="checked"
-                        color="primary"
-                        size="small"
-                      />
-                    }
-                    label={<Typography variant="h6">Keep me sign in</Typography>}
-                  />
-                  <Link
-                    variant="h6"
-                    component={RouterLink}
-                    to={isLoggedIn ? '/auth/forgot-password' : '/forgot-password'}
-                    color="text.primary"
-                  >
+                  <Link variant="h6" component={RouterLink} to={'/forgot-password'} color="text.primary">
                     Forgot Password?
                   </Link>
                 </Stack>
@@ -194,18 +140,10 @@ const AuthLogin = () => {
               )}
               <Grid item xs={12}>
                 <AnimateButton>
-                  <Button disableElevation disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained" color="primary">
+                  <Button disableElevation fullWidth size="large" variant="contained" type="submit" color="primary">
                     Login
                   </Button>
                 </AnimateButton>
-              </Grid>
-              <Grid item xs={12}>
-                <Divider>
-                  <Typography variant="caption"> Login with</Typography>
-                </Divider>
-              </Grid>
-              <Grid item xs={12}>
-                <FirebaseSocial />
               </Grid>
             </Grid>
           </form>

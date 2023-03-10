@@ -1,13 +1,7 @@
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
-
-// third-party
 import { IntlProvider } from 'react-intl';
-
-// project import
 import useConfig from 'hooks/useConfig';
-
-// load locales files
 const loadLocaleData = (locale) => {
   switch (locale) {
     case 'es':
@@ -17,8 +11,6 @@ const loadLocaleData = (locale) => {
       return import('utils/locales/en.json');
   }
 };
-
-// ==============================|| LOCALIZATION ||============================== //
 
 const Locales = ({ children }) => {
   const { i18n } = useConfig();

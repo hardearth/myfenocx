@@ -1,0 +1,34 @@
+[
+  {
+    "Header": "From",
+    "accessor": "from"
+  },
+  {
+    "Header": "To",
+    "accessor": "to"
+  },
+  {
+    "Header": "Payment Method",
+    "accessor": "methodPayment"
+  },
+  {
+    "Header": "Detail",
+    "accessor": "detail"
+  },
+  {
+    "Header": "Amount",
+    "accessor": "amount"
+  },
+  {
+    "Header": "Hash",
+    "accessor": "hash"
+  },
+  {
+    "Header": "Date",
+    "accessor": "date"
+  },
+  {
+    "Header": "Status",
+    "accessor": "status"
+  }
+]

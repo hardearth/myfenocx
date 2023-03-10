@@ -1,0 +1,128 @@
+{
+  "publications": [
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+      "name": "Publication name",
+      "description": "Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad minim venice, quin nostrum exercitation",
+      "url": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+      "img": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+      "date": "2023-02-14T03:31:40.953+00:00"
+    },
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b15a",
+      "name": "Publication name dos",
+      "description": "Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad minim venice, quin nostrum exercitation",
+      "url": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+      "img": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+      "date": "2023-02-14T03:31:40.953+00:00"
+    }
+  ],
+  "finance": [
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+      "name": "Class name",
+      "description": "Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad minim venice, quin nostrum exercitation",
+      "url": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+      "img": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+      "date": "2023-02-14T03:31:40.953+00:00"
+    },
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b15a",
+      "name": "Class name two",
+      "description": "Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad minim venice, quin nostrum exercitation",
+      "url": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+      "img": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+      "date": "2023-02-14T03:31:40.953+00:00"
+    }
+  ],
+  "trading": [
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+      "name": "Class name",
+      "description": "Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad minim venice, quin nostrum exercitation",
+      "url": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+      "img": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+      "date": "2023-02-14T03:31:40.953+00:00"
+    },
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b15a",
+      "name": "Class name two",
+      "description": "Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad minim venice, quin nostrum exercitation",
+      "url": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+      "img": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+      "date": "2023-02-14T03:31:40.953+00:00"
+    }
+  ],
+  "health": [
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+      "name": "Class name",
+      "description": "Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad minim venice, quin nostrum exercitation",
+      "url": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+      "img": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+      "date": "2023-02-14T03:31:40.953+00:00"
+    },
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b15a",
+      "name": "Class name two",
+      "description": "Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad minim venice, quin nostrum exercitation",
+      "url": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+      "img": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+      "date": "2023-02-14T03:31:40.953+00:00"
+    }
+  ],
+  "marketing": [
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+      "name": "Class name",
+      "description": "Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad minim venice, quin nostrum exercitation",
+      "url": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+      "img": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+      "date": "2023-02-14T03:31:40.953+00:00"
+    },
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b15a",
+      "name": "Class name two",
+      "description": "Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad minim venice, quin nostrum exercitation",
+      "url": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+      "img": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+      "date": "2023-02-14T03:31:40.953+00:00"
+    }
+  ],
+  "websites": [
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+      "name": "Class name",
+      "description": "Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad minim venice, quin nostrum exercitation",
+      "url": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+      "img": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+      "date": "2023-02-14T03:31:40.953+00:00"
+    },
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b15a",
+      "name": "Class name two",
+      "description": "Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad minim venice, quin nostrum exercitation",
+      "url": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+      "img": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+      "date": "2023-02-14T03:31:40.953+00:00"
+    }
+  ],
+  "design": [
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+      "name": "Class name",
+      "description": "Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad minim venice, quin nostrum exercitation",
+      "url": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+      "img": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+      "date": "2023-02-14T03:31:40.953+00:00"
+    },
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b15a",
+      "name": "Class name two",
+      "description": "Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad minim venice, quin nostrum exercitation",
+      "url": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+      "img": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+      "date": "2023-02-14T03:31:40.953+00:00"
+    }
+  ]
+}

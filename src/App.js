@@ -1,33 +1,41 @@
-// project import
 import Routes from 'routes';
 import ThemeCustomization from 'themes';
 import Locales from 'components/Locales';
-import RTLLayout from 'components/RTLLayout';
 import ScrollTop from 'components/ScrollTop';
-import Snackbar from 'components/@extended/Snackbar';
-
-// auth provider
-import { FirebaseProvider as AuthProvider } from 'contexts/FirebaseContext';
-// import { AWSCognitoProvider as AuthProvider } from 'contexts/AWSCognitoContext';
-// import { JWTProvider as AuthProvider } from 'contexts/JWTContext';
-// import { Auth0Provider as AuthProvider } from 'contexts/Auth0Context';
-
-// ==============================|| APP - THEME, ROUTER, LOCAL  ||============================== //
+import { Toaster } from 'react-hot-toast';
 
 const App = () => (
   <ThemeCustomization>
-    <RTLLayout>
-      <Locales>
-        <ScrollTop>
-          <AuthProvider>
-            <>
-              <Routes />
-              <Snackbar />
-            </>
-          </AuthProvider>
-        </ScrollTop>
-      </Locales>
-    </RTLLayout>
+    <Locales>
+      <ScrollTop>
+        <>
+          <Routes />
+        </>
+      </ScrollTop>
+      <Toaster
+        reverseOrder={false}
+        gutter={8}
+        containerClassName=""
+        containerStyle={{}}
+        toastOptions={{
+          // Define default options
+          className: '',
+          duration: 5000,
+          style: {
+            background: '#D1A56B',
+            color: '#fff'
+          },
+          // Default options for specific types
+          success: {
+            duration: 3000,
+            theme: {
+              primary: 'green',
+              secondary: 'black'
+            }
+          }
+        }}
+      />
+    </Locales>
   </ThemeCustomization>
 );
 

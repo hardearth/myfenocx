@@ -14,29 +14,29 @@ const icons = {
 // ==============================|| MENU ITEMS - FOUNDING ||============================== //
 
 const options = {
-  id: 'ecommerce',
-  title: <FormattedMessage id="ecommerce" />,
+  id: 'eCommerce',
+  title: <FormattedMessage id="eCommerce" />,
   type: 'group',
   children: [
     {
       id: 'marketing',
       title: <FormattedMessage id="marketing" />,
       type: 'item',
-      url: '/ecommerce/marketing',
+      url: '/eCommerce/marketing',
       icon: icons.ReconciliationOutlined
     },
     {
       id: 'websites',
       title: <FormattedMessage id="websites" />,
       type: 'item',
-      url: '/ecommerce/websites',
+      url: '/eCommerce/websites',
       icon: icons.GlobalOutlined
     },
     {
       id: 'design',
       title: <FormattedMessage id="design" />,
       type: 'item',
-      url: '/ecommerce/design',
+      url: '/eCommerce/design',
       icon: icons.PictureOutlined
     }
   ]

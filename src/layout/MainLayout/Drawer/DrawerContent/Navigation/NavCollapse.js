@@ -72,7 +72,6 @@ const NavCollapse = ({ menu, level }) => {
     setAnchorEl(null);
   };
 
-  // const { pathname } = useLocation();
   const pathname = document.location.pathname;
 
   useEffect(() => {

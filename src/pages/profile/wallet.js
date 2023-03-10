@@ -1,9 +1,5 @@
 import { Button, Grid, InputLabel, MenuItem, Select, Stack, TextField, Typography } from '@mui/material';
-
-// project import
 import MainCard from 'components/MainCard';
-
-// ==============================|| ACCOUNT PROFILE - PERSONAL ||============================== //
 
 const Wallet = () => {
   return (

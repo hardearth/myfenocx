@@ -1,17 +1,9 @@
 import { Link as RouterLink } from 'react-router-dom';
-
-// material-ui
 import { useTheme } from '@mui/material/styles';
-import { Box, Button, Container, Grid, Link, Typography } from '@mui/material';
-
-// third party
+import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
-
-// assets
 import { EyeOutlined } from '@ant-design/icons';
 import AnimateButton from 'components/@extended/AnimateButton';
-
-// ==============================|| LANDING - HEADER PAGE ||============================== //
 
 const HeaderPage = () => {
   const theme = useTheme();
@@ -96,15 +88,6 @@ const HeaderPage = () => {
                       >
                         Explore dashboard
                       </Button>
-                    </AnimateButton>
-                  </Grid>
-                  <Grid item>
-                    <AnimateButton>
-                      <RouterLink to="/buy" style={{ textDecoration: 'none' }}>
-                        <Button component={Link} size="large" color="primary" variant="contained">
-                          Buy Account
-                        </Button>
-                      </RouterLink>
                     </AnimateButton>
                   </Grid>
                 </Grid>

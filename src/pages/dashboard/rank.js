@@ -1,8 +1,5 @@
 import { FormattedMessage } from 'react-intl';
-// material-ui
 import { Grid, Typography } from '@mui/material';
-
-// project imports
 import Rank from 'sections/dashboard/Rank';
 
 const Page = () => {

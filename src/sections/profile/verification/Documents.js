@@ -125,6 +125,7 @@ export default function Document({ documents, setDocuments, handleNext, setError
                     <Select value="CC" name="idType">
                       <MenuItem value="CC">CC</MenuItem>
                       <MenuItem value="NIT">NIT</MenuItem>
+                      <MenuItem value="PASSPORT">PASSPORT</MenuItem>
                     </Select>
                     <TextField
                       id="identification"

@@ -1,0 +1,188 @@
+{
+  "funding": [
+    {
+      "_id": "f1",
+      "name": "FTMO",
+      "url": "http://www.google.com",
+      "values":[
+        {
+          "_id": "f1v1",
+          "name": "biannual",
+          "value": 250
+        },
+        {
+          "_id": "f1v2",
+          "name": "annual",
+          "value": 400
+        }
+      ],
+      "types":[
+        {
+          "_id": "f1t1",
+          "name": "demo 0",
+          "real": false
+        },
+        {
+          "_id": "f1t2",
+          "name": "demo 1",
+          "real": false
+        },
+        {
+          "_id": "f1t3",
+          "name": "Real",
+          "real": true
+        }
+      ],
+      "packages": [
+        {
+          "_id": "f1p1",
+          "name": "25K",
+          "value": 250
+        },
+        {
+          "_id": "f1p2",
+          "name": "100K",
+          "value": 450
+        }
+      ]
+    },
+    {
+      "_id": "f2",
+      "name": "FUNDED NEXT",
+      "url": "http://www.google.com",
+      "values":[
+        {
+          "_id": "f2v1",
+          "name": "biannual",
+          "value": 250
+        },
+        {
+          "_id": "f2v2",
+          "name": "annual",
+          "value": 400
+        }
+      ],
+      "types":[
+        {
+          "_id": "f2t1",
+          "name": "demo 0",
+          "real": false
+        },
+        {
+          "_id": "f2t2",
+          "name": "demo 1",
+          "real": false
+        },
+        {
+          "_id": "f2t3",
+          "name": "Real",
+          "real": true
+        }
+      ],
+      "packages": [
+        {
+          "_id": "f2p1",
+          "name": "25K",
+          "value": 250
+        },
+        {
+          "_id": "f2p2",
+          "name": "100K",
+          "value": 450
+        }
+      ]
+    },
+    {
+      "_id": "f3",
+      "name": "Funded Trading plus",
+      "url": "http://www.google.com",
+      "values":[
+        {
+          "_id": "f3v1",
+          "name": "biannual",
+          "value": 250
+        },
+        {
+          "_id": "f3v2",
+          "name": "annual",
+          "value": 400
+        }
+      ],
+      "types":[
+        {
+          "_id": "f3t1",
+          "name": "demo 0",
+          "real": false
+        },
+        {
+          "_id": "f3t2",
+          "name": "demo 1",
+          "real": false
+        },
+        {
+          "_id": "f3t3",
+          "name": "Real",
+          "real": true
+        }
+      ],
+      "packages": [
+        {
+          "_id": "f3p1",
+          "name": "25K",
+          "value": 250
+        },
+        {
+          "_id": "f3p2",
+          "name": "100K",
+          "value": 450
+        }
+      ]
+    },
+    {
+      "_id": "f4",
+      "name": "Voltage Funds",
+      "url": "http://www.google.com",
+      "values":[
+        {
+          "_id": "f4v1",
+          "name": "biannual",
+          "value": 250
+        },
+        {
+          "_id": "f4v2",
+          "name": "annual",
+          "value": 400
+        }
+      ],
+      "types":[
+        {
+          "_id": "f4t1",
+          "name": "demo 0",
+          "real": false
+        },
+        {
+          "_id": "f4t2",
+          "name": "demo 1",
+          "real": false
+        },
+        {
+          "_id": "f4t3",
+          "name": "Real",
+          "real": true
+        }
+      ],
+      "packages": [
+        {
+          "_id": "f4p1",
+          "name": "25K",
+          "value": 250
+        },
+        {
+          "_id": "f4p2",
+          "name": "100K",
+          "value": 450
+        }
+      ]
+    }
+  ]
+}

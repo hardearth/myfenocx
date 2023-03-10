@@ -1,0 +1,174 @@
+{
+  "trading": [
+    {
+      "_id": "t1",
+      "name": "MyBOTCent",
+      "min": 100,
+      "url": "http://www.google.com",
+      "description": "Monthly profitability from 7 to 15%",
+      "values":[
+        {
+          "_id": "t1v1",
+          "name": "monthly",
+          "value": 10
+        },
+        {
+          "_id": "t1v2",
+          "name": "biannual",
+          "value": 50
+        },
+        {
+          "_id": "t1v3",
+          "name": "annual",
+          "value": 100
+        }
+      ],
+      "brokers": [
+        {
+          "_id": "t1b1",
+          "name": "Broker 1"
+        },
+        {
+          "_id": "t1b2",
+          "name": "Broker 2"
+        }
+      ]
+    },
+    {
+      "_id": "t2",
+      "name": "MyGoldBOT",
+      "min": 100,
+      "url": "http://www.google.com",
+      "description": "Monthly profitability from 7 to 15%",
+      "values":[
+        {
+          "_id": "t2v1",
+          "name": "monthly",
+          "value": 10
+        },
+        {
+          "_id": "t2v2",
+          "name": "biannual",
+          "value": 50
+        },
+        {
+          "_id": "t2v3",
+          "name": "annual",
+          "value": 100
+        }
+      ],
+      "brokers": [
+        {
+          "_id": "t2b1",
+          "name": "Broker 1"
+        },
+        {
+          "_id": "t2b2",
+          "name": "Broker 2"
+        }
+      ]
+    },
+    {
+      "_id": "t3",
+      "name": "MySyntheticBOT",
+      "min": 100,
+      "url": "http://www.google.com",
+      "description": "Monthly profitability from 7 to 15%",
+      "values":[
+        {
+          "_id": "t3v1",
+          "name": "monthly",
+          "value": 10
+        },
+        {
+          "_id": "t3v2",
+          "name": "biannual",
+          "value": 50
+        },
+        {
+          "_id": "t3v3",
+          "name": "annual",
+          "value": 100
+        }
+      ],
+      "brokers": [
+        {
+          "_id": "t3b1",
+          "name": "Broker 1"
+        },
+        {
+          "_id": "t3b2",
+          "name": "Broker 2"
+        }
+      ]
+    },
+    {
+      "_id": "t4",
+      "name": "MyFxBOT",
+      "min": 100,
+      "url": "http://www.google.com",
+      "description": "Monthly profitability from 7 to 15%",
+      "values":[
+        {
+          "_id": "t4v1",
+          "name": "monthly",
+          "value": 10
+        },
+        {
+          "_id": "t4v2",
+          "name": "biannual",
+          "value": 50
+        },
+        {
+          "_id": "t4v3",
+          "name": "annual",
+          "value": 100
+        }
+      ],
+      "brokers": [
+        {
+          "_id": "t4b1",
+          "name": "Broker 1"
+        },
+        {
+          "_id": "t4b2",
+          "name": "Broker 2"
+        }
+      ]
+    },
+    {
+      "_id": "t5",
+      "name": "MyFxBOT",
+      "min": 100,
+      "url": "http://www.google.com",
+      "description": "Monthly profitability from 7 to 15%",
+      "values":[
+        {
+          "_id": "t5v1",
+          "name": "monthly",
+          "value": 10
+        },
+        {
+          "_id": "t5v2",
+          "name": "biannual",
+          "value": 50
+        },
+        {
+          "_id": "t5v3",
+          "name": "annual",
+          "value": 100
+        }
+      ],
+      "brokers": [
+        {
+          "_id": "t5b1",
+          "name": "Broker 1"
+        },
+        {
+          "_id": "t5b2",
+          "name": "Broker 2"
+        }
+      ]
+    }
+  ]
+}

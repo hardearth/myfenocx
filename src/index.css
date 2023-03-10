@@ -2,18 +2,132 @@
   display: block;
   position: relative;
   overflow-x: auto;
+  max-height: 70vh;
 }
-.Link {
-  text-decoration: none;
-  color: red !important;
+
+.msm-date {
+  display: block;
+  position: absolute;
+  right: 30px;
+  margin-top: -15px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 11px
+}
+
+.show{
+  z-index: 100;
+}
+
+.offcanvas-end{
+  z-index: 1300;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.card {
+  background: #111;
+  font-weight: bold !important;
+  border: none;
+  border-radius: 11px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: -10px 10px 20px rgba(0,0,0,0.7);
+  transition-duration: 200ms;
+}
+
+.bg-green {
+  background: linear-gradient(90deg, #379973 0%, transparent 100%) !important;
+}
+
+.bg-red {
+  background: linear-gradient(90deg, #c23037 0%, transparent 100%) !important;
+}
+
+.bg-blue {
+  background: linear-gradient(90deg, rgb(170, 170, 170) 0%, transparent 100%) !important;
+}
+
+.bg-black {
+  background: linear-gradient(90deg, #13171a 0%, transparent 100%) !important;
+}
+
+.bg-yellow {
+  background: linear-gradient(90deg, #d1a56b 0%, transparent 100%) !important;
+}
+
+.bg-primary, .btn-primary {
+  background: #D1A56B !important;
+}
+
+.btn-primary {
+  border: 1px solid #D1A56B !important;
+  border-radius: 5px !important;
+  font-size: 15px;
+}
+
+.text-primary {
+  color: #D1A56B !important;
+}
+
+.btn-outline-primary {
+  border: 1px solid #D1A56B !important;
+  color: #D1A56B !important;
+  border-radius: 5px !important;
+  font-size: 15px;
+}
+
+.btn-outline-primary:hover {
+  background: #D1A56B !important;
+  color: white !important;
 }
 
 .qr {
   display: block;
   position: relative;
-  margin: 10px auto;
+  margin: 25px auto;
   width: 200px;
   border-radius: 10px
+}
+
+.state {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.apexcharts-legend-series .apexcharts-legend-marker {
+  left: -4px !important;
+}
+
+.cell-center {
+  text-align: center;
+}
+.cell-center > * {
+  margin: 0 auto;
+}
+
+.cell-right {
+  text-align: right;
+}
+.cell-right > * {
+  margin: 0 0 0 auto;
+}
+
+.bg-transparent {
+  background: transparent !important;
+}
+
+.accordion-button, .accordion-button:hover, .accordion-button:focus {
+  color: white !important
 }
 
 /* Works on Chrome, Edge, and Safari */

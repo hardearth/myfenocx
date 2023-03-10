@@ -1,13 +1,8 @@
-import { Button, Grid, InputLabel, MenuItem, Select, Stack, TextField, Typography } from '@mui/material';
-
-// third-party
+import { Button, Grid, InputLabel, Stack, TextField, Typography } from '@mui/material';
 import NumberFormat from 'react-number-format';
-
-// project import
 import MainCard from 'components/MainCard';
 import ReferralLink from 'sections/dashboard/ReferralLink';
-
-// ==============================|| ACCOUNT PROFILE - PERSONAL ||============================== //
+import user from 'data/user';
 
 const TabPersonal = () => {
   return (
@@ -26,13 +21,13 @@ const TabPersonal = () => {
             <Grid item xs={12} sm={6}>
               <Stack spacing={1.25}>
                 <InputLabel htmlFor="personal-first-name">First Name</InputLabel>
-                <TextField fullWidth defaultValue="Anshan" id="personal-first-name" placeholder="First Name" autoFocus />
+                <TextField fullWidth defaultValue={user.name} id="personal-first-name" placeholder="First Name" autoFocus />
               </Stack>
             </Grid>
             <Grid item xs={12} sm={6}>
               <Stack spacing={1.25}>
                 <InputLabel htmlFor="personal-first-name">Last Name</InputLabel>
-                <TextField fullWidth defaultValue="Handgun" id="personal-first-name" placeholder="Last Name" />
+                <TextField fullWidth defaultValue={user.lastname} id="personal-first-name" placeholder="Last Name" />
               </Stack>
             </Grid>
           </Grid>
@@ -47,19 +42,30 @@ const TabPersonal = () => {
                   <Stack spacing={1.25}>
                     <InputLabel htmlFor="personal-phone">Phone Number</InputLabel>
                     <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2}>
-                      <Select defaultValue="+57">
-                        <MenuItem value="+57">+57</MenuItem>
-                        <MenuItem value="91">+91</MenuItem>
-                        <MenuItem value="1-671">1-671</MenuItem>
-                        <MenuItem value="36">+36</MenuItem>
-                        <MenuItem value="225">(255)</MenuItem>
-                        <MenuItem value="39">+39</MenuItem>
-                      </Select>
+                      <select name="countryCode" className="form-select form-select-sm bg-dark border-secondary text-light mb-2">
+                        <option value="+57">+57</option>
+                        <option value="+1">+1</option>
+                        <option value="+34">+34</option>
+                        <option value="+507">+507</option>
+                        <option value="+51">+51</option>
+                        <option value="+51">+52</option>
+                        <option value="+53">+53</option>
+                        <option value="+54">+54</option>
+                        <option value="+55">+55</option>
+                        <option value="+56">+56</option>
+                        <option value="+58">+58</option>
+                        <option value="+591">+591</option>
+                        <option value="+592">+592</option>
+                        <option value="+593">+593</option>
+                        <option value="+595">+595</option>
+                        <option value="+598">+598</option>
+                        <option value="+61">+61</option>
+                      </select>
                       <NumberFormat
                         fullWidth
                         customInput={TextField}
                         label="Phone Number"
-                        defaultValue="8654239581"
+                        defaultValue={user.phone}
                         onBlur={() => {}}
                         onChange={() => {}}
                       />
@@ -69,7 +75,7 @@ const TabPersonal = () => {
                 <Grid item xs={12} sm={6}>
                   <Stack spacing={1.25}>
                     <Typography>Email Address</Typography>
-                    <Typography color="textSecondary">mail@ejemplo.com</Typography>
+                    <Typography color="textSecondary">{user.email}</Typography>
                   </Stack>
                 </Grid>
               </Grid>

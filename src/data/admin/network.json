@@ -1,0 +1,55 @@
+{
+  "network": [
+    { 
+      "_id": "63ed4bb02f8e34ae0aa166at", 
+      "email": "ejm@mail.com",
+      "name": "Pepito",
+      "lastname": "Perez",
+      "network": [
+        {
+          "_id": "63ed4cea8b19f19f6b1f5",
+          "email": "ejm@mail.com",
+          "name": "Pepito",
+          "lastname": "Perez",
+          "network": []
+        },
+        {
+          "_id": "63ed4cea8b1cc9f1",
+          "email": "ejm@mail.com",
+          "name": "Juan",
+          "lastname": "Cortez",
+          "network": []
+        }
+      ]
+    },
+    { 
+      "_id": "63ed4cea8b19f19f6b1f5", 
+      "email": "ejm@mail.com",
+      "name": "Pepito",
+      "lastname": "Perez",
+      "network": [
+        {
+          "_id": "63ed4cea8b1cc9f1mnh",
+          "email": "ejm@mail.com",
+          "name": "Carlos",
+          "lastname": "Martinez",
+          "network": []
+        }
+      ]
+    },
+    { 
+      "_id": "63ed4cea8b1cc9f1", 
+      "email": "ejm@mail.com",
+      "name": "Pepito",
+      "lastname": "Perez",
+      "network": []
+    },
+    { 
+      "_id": "63ed4cea8b1cc9f1mnh", 
+      "email": "ejm@mail.com",
+      "name": "Pepito",
+      "lastname": "Perez",
+      "network": []
+    }
+  ]
+}

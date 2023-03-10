@@ -1,18 +1,10 @@
 import { useRef, useState } from 'react';
-
-// material-ui
 import { useTheme } from '@mui/material/styles';
 import { Box, ClickAwayListener, Grid, List, ListItemButton, ListItemText, Paper, Popper, Typography, useMediaQuery } from '@mui/material';
-
-// project import
 import IconButton from 'components/@extended/IconButton';
 import Transitions from 'components/@extended/Transitions';
 import useConfig from 'hooks/useConfig';
-
-// assets
 import { TranslationOutlined } from '@ant-design/icons';
-
-// ==============================|| HEADER CONTENT - LOCALIZATION ||============================== //
 
 const Localization = () => {
   const theme = useTheme();

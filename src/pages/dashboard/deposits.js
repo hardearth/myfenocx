@@ -1,20 +1,54 @@
-// material-ui
-import { Typography } from '@mui/material';
+import { FormattedMessage } from 'react-intl';
+import { Grid, Typography } from '@mui/material';
+import ReferralLink from 'sections/dashboard/ReferralLink';
+import Table from 'sections/dashboard/Table';
+import dataJson from 'data/transactions';
+import headersJson from 'data/system/headers';
+import user from 'data/user';
 
-// project import
-import MainCard from 'components/MainCard';
+const Page = () => {
+  return (
+    <Grid container>
+      <Grid item xs={12}>
+        <Typography variant="h1" gutterBottom>
+          <FormattedMessage id="deposits" />
+        </Typography>
+        <Typography variant="h6" color="textSecondary" gutterBottom>
+          <FormattedMessage id="dashboard" /> / <FormattedMessage id="deposits" />
+        </Typography>
+      </Grid>
+      <Grid item xs={12}>
+        <ReferralLink />
+      </Grid>
+      <div className="container mt-3">
+        <div className="row align-items-center justify-content-center">
+          <div className="col-9 col-lg-2 p-2">
+            <div className="card bg-primary">
+              <Typography variant="h1" className="text-center mb-2">
+                {user.pendingWithdrawal} <b className="h5">USD</b>
+              </Typography>
+              <Typography variant="h6" className="fw-bold">
+                Balance
+              </Typography>
+            </div>
+          </div>
+          <div className="col-9 col-lg-2 p-2">
+            <div className="card bg-green">
+              <Typography variant="h1" className="text-center mb-2">
+                {user.profits} <b className="h5">USD</b>
+              </Typography>
+              <Typography variant="h6" className="fw-bold">
+                Total deposits
+              </Typography>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Grid item xs={12}>
+        <Table dataJson={dataJson.deposits} headersJson={headersJson} />
+      </Grid>
+    </Grid>
+  );
+};
 
-// ==============================|| SAMPLE PAGE ||============================== //
-
-const SamplePage = () => (
-  <MainCard title="Sample Card">
-    <Typography variant="body2">
-      Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad
-      minim venice, quin nostrum exercitation illampu laborings nisi ut liquid ex ea commons construal. Duos aube grue dolor in reprehended
-      in voltage veil esse colum doolie eu fujian bulla parian. Exceptive sin ocean cuspidate non president, sunk in culpa qui officiate
-      descent molls anim id est labours.
-    </Typography>
-  </MainCard>
-);
-
-export default SamplePage;
+export default Page;

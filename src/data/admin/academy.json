@@ -1,0 +1,14 @@
+{
+  "academy": [
+    {
+      "_id": "academy1",
+      "name": "Finance",
+      "value": 100
+    },
+    {
+      "_id": "academy2",
+      "name": "Trading",
+      "value": 200
+    }
+  ]
+}

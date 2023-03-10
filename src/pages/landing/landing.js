@@ -1,15 +1,9 @@
 import { useEffect, useState } from 'react';
-
-// material-ui
 import { useTheme } from '@mui/material/styles';
 import { Box, CardMedia } from '@mui/material';
-
-// project import
 import useConfig from 'hooks/useConfig';
 import Hero from 'sections/landing/Header';
 const dashImage = require.context('assets/images/landing', true);
-
-// ==============================|| LANDING PAGE ||============================== //
 
 const Landing = () => {
   const theme = useTheme();

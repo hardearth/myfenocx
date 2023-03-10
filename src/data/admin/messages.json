@@ -1,0 +1,250 @@
+{
+  "binary": [
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+      "name": "First week",
+      "messages": [
+        {
+          "_id": "a63ed4cea1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1cc9f19f61f5a",
+          "type": "img",
+          "content": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message dos",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63e4cea8b1cc9f19f6b1f5a",
+          "type": "document",
+          "content": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        }
+      ]
+    },
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b15a",
+      "name": " Second week",
+      "messages": [
+        {
+          "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message dos",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1c9f19f6b1f5a",
+          "type": "img",
+          "content": "https://www.codigotrading.com/wp-content/uploads/2022/02/trading.codigo.jpg",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+          "type": "document",
+          "content": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        }
+      ]
+    }
+  ],
+  "cryptos": [
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+      "name": "First week",
+      "messages": [
+        {
+          "_id": "a63ed4cea1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1cc9f19f61f5a",
+          "type": "img",
+          "content": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message dos",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63e4cea8b1cc9f19f6b1f5a",
+          "type": "document",
+          "content": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        }
+      ]
+    },
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b15a",
+      "name": " Second week",
+      "messages": [
+        {
+          "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message dos",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1c9f19f6b1f5a",
+          "type": "img",
+          "content": "https://www.codigotrading.com/wp-content/uploads/2022/02/trading.codigo.jpg",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+          "type": "document",
+          "content": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        }
+      ]
+    }
+  ],
+  "forex": [
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+      "name": "First week",
+      "messages": [
+        {
+          "_id": "a63ed4cea1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1cc9f19f61f5a",
+          "type": "img",
+          "content": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message dos",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63e4cea8b1cc9f19f6b1f5a",
+          "type": "document",
+          "content": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        }
+      ]
+    },
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b15a",
+      "name": " Second week",
+      "messages": [
+        {
+          "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message dos",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1c9f19f6b1f5a",
+          "type": "img",
+          "content": "https://www.codigotrading.com/wp-content/uploads/2022/02/trading.codigo.jpg",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+          "type": "document",
+          "content": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        }
+      ]
+    }
+  ],
+  "synthetic": [
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+      "name": "First week",
+      "messages": [
+        {
+          "_id": "a63ed4cea1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1cc9f19f61f5a",
+          "type": "img",
+          "content": "https://mott.marketing/wp-content/uploads/2021/07/tipo-de-publicaciones-facebook.png",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message dos",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63e4cea8b1cc9f19f6b1f5a",
+          "type": "document",
+          "content": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        }
+      ]
+    },
+    {
+      "_id": "a63ed4cea8b1cc9f19f6b15a",
+      "name": " Second week",
+      "messages": [
+        {
+          "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+          "type": "text",
+          "content": "This is a message dos",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1c9f19f6b1f5a",
+          "type": "img",
+          "content": "https://www.codigotrading.com/wp-content/uploads/2022/02/trading.codigo.jpg",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        },
+        {
+          "_id": "a63ed4cea8b1cc9f19f6b1f5a",
+          "type": "document",
+          "content": "https://eqpro.es/wp-content/uploads/2018/11/Ejemplo.pdf",
+          "date": "2023-02-14T03:31:40.953+00:00"
+        }
+      ]
+    }
+  ]
+}

@@ -1,25 +1,16 @@
 import PropTypes from 'prop-types';
 import { useMemo } from 'react';
-
-// material-ui
 import { useTheme } from '@mui/material/styles';
 import { AppBar, Toolbar, useMediaQuery } from '@mui/material';
-
-// project import
 import AppBarStyled from './AppBarStyled';
 import HeaderContent from './HeaderContent';
 import IconButton from 'components/@extended/IconButton';
-
-// assets
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
-
-// ==============================|| MAIN LAYOUT - HEADER ||============================== //
 
 const Header = ({ open, handleDrawerToggle }) => {
   const theme = useTheme();
   const matchDownMD = useMediaQuery(theme.breakpoints.down('lg'));
 
-  // header content
   const headerContent = useMemo(() => <HeaderContent />, []);
 
   const iconBackColorOpen = theme.palette.mode === 'dark' ? 'grey.200' : 'grey.300';

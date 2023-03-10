@@ -1,10 +1,5 @@
-// material-ui
 import { Grid } from '@mui/material';
-
-// project imports
 import ValidationWizard from 'sections/profile/verification';
-
-// ==============================|| FORMS WIZARD ||============================== //
 
 const page = () => (
   <Grid container spacing={2.5} justifyContent="center">

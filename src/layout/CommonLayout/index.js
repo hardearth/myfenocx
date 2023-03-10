@@ -1,15 +1,11 @@
 import PropTypes from 'prop-types';
 import { lazy, Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-
-// material-ui
 import { styled } from '@mui/material/styles';
 import LinearProgress from '@mui/material/LinearProgress';
+import Footer from '../Footer';
 
 const Header = lazy(() => import('./Header'));
-const FooterBlock = lazy(() => import('./FooterBlock'));
-
-// ==============================|| Loader ||============================== //
 
 const LoaderWrapper = styled('div')(({ theme }) => ({
   position: 'fixed',
@@ -37,7 +33,7 @@ const CommonLayout = ({ layout = 'blank' }) => {
         <Suspense fallback={<Loader />}>
           <Header layout={layout} />
           <Outlet />
-          <FooterBlock isFull={layout === 'landing'} />
+          <Footer />
         </Suspense>
       )}
       {layout === 'blank' && <Outlet />}

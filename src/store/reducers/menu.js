@@ -1,15 +1,11 @@
-// third-party
 import { createSlice } from '@reduxjs/toolkit';
 
-// initial state
 const initialState = {
   openItem: ['dashboard'],
   openComponent: 'buttons',
   drawerOpen: false,
   componentDrawerOpen: true
 };
-
-// ==============================|| SLICE - MENU ||============================== //
 
 const menu = createSlice({
   name: 'menu',

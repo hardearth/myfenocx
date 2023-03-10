@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
 
 // material-ui
 import {
@@ -19,14 +17,9 @@ import {
 // third party
 import * as Yup from 'yup';
 import { Formik } from 'formik';
-
-// project import
-import useAuth from 'hooks/useAuth';
-import useScriptRef from 'hooks/useScriptRef';
 import IconButton from 'components/@extended/IconButton';
 import AnimateButton from 'components/@extended/AnimateButton';
 import { strengthColor, strengthIndicator } from 'utils/password-strength';
-import { openSnackbar } from 'store/reducers/snackbar';
 
 // assets
 import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
@@ -34,12 +27,6 @@ import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
 // ============================|| STATIC - RESET PASSWORD ||============================ //
 
 const AuthResetPassword = () => {
-  const scriptedRef = useScriptRef();
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-
-  const { isLoggedIn } = useAuth();
-
   const [level, setLevel] = useState();
   const [showPassword, setShowPassword] = useState(false);
   const handleClickShowPassword = () => {
@@ -76,38 +63,6 @@ const AuthResetPassword = () => {
               then: Yup.string().oneOf([Yup.ref('password')], 'Both Password must be match!')
             })
         })}
-        onSubmit={async (values, { setErrors, setStatus, setSubmitting }) => {
-          try {
-            // password reset
-            if (scriptedRef.current) {
-              setStatus({ success: true });
-              setSubmitting(false);
-
-              dispatch(
-                openSnackbar({
-                  open: true,
-                  message: 'Successfuly reset password.',
-                  variant: 'alert',
-                  alert: {
-                    color: 'success'
-                  },
-                  close: false
-                })
-              );
-
-              setTimeout(() => {
-                navigate(isLoggedIn ? '/auth/login' : '/login', { replace: true });
-              }, 1500);
-            }
-          } catch (err) {
-            console.error(err);
-            if (scriptedRef.current) {
-              setStatus({ success: false });
-              setErrors({ submit: err.message });
-              setSubmitting(false);
-            }
-          }
-        }}
       >
         {({ errors, handleBlur, handleChange, handleSubmit, isSubmitting, touched, values }) => (
           <form noValidate onSubmit={handleSubmit}>

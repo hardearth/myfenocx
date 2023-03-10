@@ -1,0 +1,9 @@
+{
+  "health": [
+    {
+      "_id": "health1",
+      "name": "Health",
+      "value": 100
+    }
+  ]
+}

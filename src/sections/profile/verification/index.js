@@ -1,16 +1,11 @@
-import { useState } from 'react';
-
-// material-ui
+import { useState, useEffect } from 'react';
 import { Button, Step, Stepper, StepLabel, Stack, Typography } from '@mui/material';
-
-// project imports
 import Documents from './Documents';
 import Review from './Review';
 import MainCard from 'components/MainCard';
 import AnimateButton from 'components/@extended/AnimateButton';
-
-// step options
 const steps = ['Upload documents', 'Review your status'];
+import user from 'data/user';
 
 const getStepContent = (step, handleNext, setErrorIndex, documents, setDocuments) => {
   switch (step) {
@@ -23,12 +18,16 @@ const getStepContent = (step, handleNext, setErrorIndex, documents, setDocuments
   }
 };
 
-// ==============================|| VERIFICATION KYC ||============================== //
-
 const ValidationWizard = () => {
-  const [activeStep, setActiveStep] = useState(0);
+  const [activeStep, setActiveStep] = useState(1);
   const [documents, setDocuments] = useState({});
   const [errorIndex, setErrorIndex] = useState(null);
+
+  useEffect(() => {
+    if (user.statusKYC === 'inactive') {
+      setActiveStep(0);
+    }
+  }, []);
 
   const handleNext = () => {
     setActiveStep(activeStep + 1);

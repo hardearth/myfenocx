@@ -1,17 +1,9 @@
 import PropTypes from 'prop-types';
-
-// material-ui
 import { Box, Grid } from '@mui/material';
-
-// project import
-import AuthFooter from 'components/cards/AuthFooter';
+import Footer from 'layout/Footer';
 import Logo from 'components/logo';
 import AuthCard from './AuthCard';
-
-// assets
 import AuthBackground from 'assets/images/auth/AuthBackground';
-
-// ==============================|| AUTHENTICATION - WRAPPER ||============================== //
 
 const AuthWrapper = ({ children }) => (
   <Box sx={{ minHeight: '100vh' }}>
@@ -42,7 +34,7 @@ const AuthWrapper = ({ children }) => (
         </Grid>
       </Grid>
       <Grid item xs={12} sx={{ m: 3, mt: 1 }}>
-        <AuthFooter />
+        <Footer />
       </Grid>
     </Grid>
   </Box>
